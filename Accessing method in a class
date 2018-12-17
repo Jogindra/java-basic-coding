@@ -1,0 +1,32 @@
+//Examples of Accessing method in java
+public class Student3{  
+int id=123;  
+String name="jogindra";  
+String branch="cse1..";
+int mob=123;
+//method to display the value of id and name  
+void display()
+{
+    
+    System.out.println("The ID is..");
+    System.out.println(id+" ");
+    
+    System.out.println("Name of the Student");
+    System.out.println(name+" ");
+    
+    System.out.println("Branch of the Student");
+    System.out.println(branch+" ");
+    
+    System.out.println("Mobile number of the Student..");
+    System.out.println(mob+" ");
+    
+    
+}  
+  
+public static void main(String args[]){  
+//creating objects  
+Student3 s1=new Student3();  
+s1.display();  
+
+}  
+}  
