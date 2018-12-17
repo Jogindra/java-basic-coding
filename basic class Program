@@ -1,0 +1,23 @@
+//Basic program on Class
+
+public class Main {
+    void display()//One method of a class a ..
+    {
+       System.out.println("Hi I am from class Display method....");
+       System.out.println("It takes much time to do GREAT WORK");
+    }
+    
+    void show()//Another Method in a class..........
+    {
+        System.out.println("Hi I am from Show method.....");
+        System.out.println("Never Give Up Just move on by rectafying your Mistakes....");
+    }
+    
+        public static void main(String args[]) 
+        {
+      
+         Main m1=new Main();//Creation of Object in a class.......
+         m1.display();   //Calling the methods using Object
+         m1.show();
+       }
+}
