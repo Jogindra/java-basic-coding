@@ -1,0 +1,28 @@
+//Basic program on array
+public class array
+{
+    public static void main(String args[])
+    {
+        int array[]={1,3,4,5};
+        int tofind=7;
+        boolean found=false;
+        for(int n=0;n<array.length;n++)
+        {
+            if(array[n]==tofind)
+            {
+               found=true;
+               break;
+            }
+        }
+          
+          
+            if(found)
+            {
+                System.out.println(tofind +" is found");
+            }
+            else
+            {
+            System.out.println(tofind +" is not found");
+            }
+            
+}}
