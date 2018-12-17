@@ -1,0 +1,23 @@
+//Reverse of a no
+import java.util.Scanner;
+
+public class Main {
+    
+     public static void main(String args[]) 
+   {
+       
+      int no,no1,dg,rev=0;
+      System.out.println("Enter a Number to get its Reverse Number..");
+      Scanner in = new Scanner(System.in);
+      no = in.nextInt();
+      //no1=no;
+     while(no>0)
+     {
+       dg=no%10;
+       rev=rev*10+dg;
+       no=no/10;
+     }
+     
+     System.out.println("The reverse of the entered no is= " +rev);
+   }
+}
