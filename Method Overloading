@@ -1,0 +1,26 @@
+//Method Overloading
+public class Student{  
+//method to display the value of id and name  
+int add(int b,int a,int d)
+{
+    int c;
+    c=a+b+d;
+ System.out.println(c);
+ return c;
+
+}  
+int add(int x,int y)
+{
+    int z;
+    z=x+y;
+    System.out.println(z);
+    return z;
+}
+public static void main(String args[])
+{
+Student s=new Student();
+     s.add(80,90);//Object Creation
+     s.add(50,50,50);  //Method overloading
+     s.add(50,50);    //Same name but having Different Parameter..
+} 
+}
