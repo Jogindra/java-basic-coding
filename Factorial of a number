@@ -1,0 +1,20 @@
+//checking Pallindrome of a no 
+import java.util.Scanner;
+
+public class Main {
+    
+     public static void main(String args[]) 
+   {
+       
+      int no,fact=1;
+      System.out.println("Enter a Number to get its factorial");
+      Scanner in = new Scanner(System.in);
+      no = in.nextInt();
+     while(no>0)
+     {
+       fact=fact*no;
+       no--;
+     }
+     System.out.println("The factorial of the number  is=" +fact);
+    
+}}
