@@ -1,0 +1,30 @@
+//checking Pallindrome of a no 
+import java.util.Scanner;
+
+public class Main {
+    
+     public static void main(String args[]) 
+   {
+       
+      int no,no1,dg,rev=0;
+      System.out.println("Enter a Number to check its pallindrome or not..");
+      Scanner in = new Scanner(System.in);
+      no = in.nextInt();
+      no1=no;
+     while(no>0)
+     {
+       dg=no%10;
+       rev=rev*10+dg;
+       no=no/10;
+     }
+     if(rev==no1)
+     {
+    System.out.println("The number is a pallindrome=" + no1);
+     }
+     
+     else
+     {
+         System.out.println("The number is not a pallindrome = " +no1);
+         
+     }
+}}
