@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Array_Sum
+{
+    public static void main(String[] args) 
+    {
+        int n,i;
+        char array[]={'j','o','g','i'};
+        char ch='p';
+        boolean b=false;
+        for(i=0;i<array.length;i++)
+        {
+        if(array[i]==ch)
+        {
+            b=true;
+        }
+            
+        }
+          if(b==true)
+          {
+            System.out.println("The character is found");
+          }
+          else
+          {
+              System.out.println("The character is not in the array..");
+          }
+        }
+}
