@@ -1,0 +1,43 @@
+//Examples of Constructor Chaining........
+
+public class Employee
+{   
+    public String empName;
+    public int empSalary;
+    public String address;
+
+    //default constructor of the class
+    public Employee()
+    {
+    	//this will call the constructor with String param
+        this("JoGINDRA");
+    }
+
+    public Employee(String name)
+    {
+    	//call the constructor with (String, int) param
+    	this(name, 12600);
+    }
+    public Employee(String name, int sal)
+    {
+    	//call the constructor with (String, int, String) param
+    	this(name, sal, "odisha");
+    }
+    public Employee(String name, int sal, String addr)
+    {
+    	this.empName=name;
+    	this.empSalary=sal;
+    	this.address=addr;
+    }
+
+    void disp() {
+    	System.out.println("Employee Name: "+empName);
+    	System.out.println("Employee Salary: "+empSalary);
+    	System.out.println("Employee Address: "+address);
+    }
+    public static void main(String[] args)
+    {
+        Employee obj = new Employee();
+        obj.disp();
+    }
+}
