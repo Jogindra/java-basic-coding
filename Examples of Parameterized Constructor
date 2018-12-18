@@ -1,0 +1,25 @@
+//program on constructor
+public class Hello {
+   String name;
+   String project;
+   int age;
+   float salary;
+   //Constructor
+   Hello(String name,String project,int age,float salary){//Parameterized Constructor.
+      this.name =name;//Current Object
+      this.project=project;
+      this.age=age;
+      this.salary=salary;
+     //Refering the current Object..
+   }
+   
+   void display()
+   {
+       System.out.println("Name:"+name +"\n Project: "+project+ "\n age: "+age +"\n salary: "+salary);//Method to display Output
+     
+   }
+   public static void main(String[] args) {
+      Hello obj = new Hello("jogindra","verizon",21,12600f);//Passing parameter to the Constructor
+      obj.display();//Calling the method with the Help of object
+   }
+}
