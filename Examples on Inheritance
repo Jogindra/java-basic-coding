@@ -1,0 +1,36 @@
+//Programs on Inheritance....
+class Teacher {//Base class 
+   String designation ="Teacher";
+   String college = "Beginnersbook";
+   
+   
+   void does(){//Base class Method
+   	System.out.println("1.Teaching..");
+   	System.out.println("2.Beating..");
+   	System.out.println("3.Scolding..");
+   }
+}
+public class MathTeacher extends Teacher{
+   String mainSubject = "Discrete Structures";
+   
+   void mathteacherdoes(){//Child class Methods...
+   /*	System.out.println("1.Teaching..");
+   	System.out.println("2.Beating..");
+   	System.out.println("3.Scolding..");*/
+   	System.out.println("4.Writing Formula..");
+   	System.out.println("5.Solving Love Issues");
+   	System.out.println("6.Giving Useless Speech..");
+   }
+   
+   public static void main(String args[]){
+      MathTeacher obj = new MathTeacher();
+      System.out.println(obj.college);
+      System.out.println(obj.designation);
+      System.out.println(obj.mainSubject);
+      obj.does();
+      obj.mathteacherdoes();
+   }
+}
+
+
+
