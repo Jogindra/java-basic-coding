@@ -1,0 +1,23 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+
+public class List10indexof {
+	public static void main(String[] args) {
+		ArrayList<Integer> a1=new ArrayList<Integer>();
+		a1.add(2);
+		a1.add(3);
+		a1.add(3);
+		a1.add(4);
+		a1.add(5);
+		a1.add(1);
+		a1.add(3);
+	int index=a1.indexOf(15);
+	//Find out the firest occurence of the index if not found then return -1
+	int lindex=a1.lastIndexOf(3);
+	System.out.println(index);
+	System.out.println("The First index of the element id :="+index);
+	System.out.println("The Last  index of the element id :"+lindex);
+	}
+
+}
