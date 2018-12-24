@@ -1,0 +1,23 @@
+package com.infinite.collection.list;
+
+import java.util.ArrayList;
+
+public class List {
+	public static void main(String[] args) {
+		ArrayList<String> l=new ArrayList<String>();//Creation of Araay list 
+		l.add("1.Rohit");//Method for appending the data
+		l.add("2.sikhar");
+		l.add("3.Virat");
+		l.add("4.Rayadu");
+		l.add("5.Dhoni");
+		l.add("6.Rishav");
+		l.add("7.Hardik");
+		l.add("8.jadeja");
+		l.add("9.Buvi");
+		l.add("10.Bumhra");
+		l.add("11.Kuldeep");
+		System.out.print(l);
+		
+	}
+
+}
